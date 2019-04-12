@@ -12,3 +12,4 @@ C:\workfolder\library\TodoApi\obj\Debug\netcoreapp2.1\TodoApi.AssemblyInfo.cs
 C:\workfolder\library\TodoApi\obj\Debug\netcoreapp2.1\TodoApi.RazorTargetAssemblyInfo.cache
 C:\workfolder\library\TodoApi\obj\Debug\netcoreapp2.1\TodoApi.dll
 C:\workfolder\library\TodoApi\obj\Debug\netcoreapp2.1\TodoApi.pdb
+C:\workfolder\library\TodoApi\bin\Debug\netcoreapp2.1\Api.xml

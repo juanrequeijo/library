@@ -45,7 +45,7 @@ namespace TodoApi.Controllers
 
             return todoItem;
         }
-        
+
         // POST: api/Todo
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem item)
@@ -70,5 +70,29 @@ namespace TodoApi.Controllers
 
             return NoContent();
         }
+
+
+        /// <summary>
+        /// Deletes a specific TodoItem.
+        /// </summary>
+        /// <param name="id"></param>   
+        // DELETE: api/Todo/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTodoItem(long id)
+        {
+            var todoItem = await _context.TodoItems.FindAsync(id);
+
+            if (todoItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.TodoItems.Remove(todoItem);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+
     }
 }
