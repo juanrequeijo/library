@@ -36,6 +36,14 @@ namespace TodoApi
                 opt.UseInMemoryDatabase("UserList"));
             services.AddDbContext<UserContext>(opt =>
                 opt.UseInMemoryDatabase("LivroList"));
+            services.AddDbContext<UserContext>(opt =>
+                opt.UseInMemoryDatabase("StatusList"));
+            services.AddDbContext<UserContext>(opt =>
+                opt.UseInMemoryDatabase("DemandsList"));
+            services.AddDbContext<UserContext>(opt =>
+                opt.UseInMemoryDatabase("CheckoutList"));
+            services.AddDbContext<UserContext>(opt =>
+                opt.UseInMemoryDatabase("SearchList"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Register the Swagger generator, defining 1 or more Swagger documents

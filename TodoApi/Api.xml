@@ -4,9 +4,33 @@
         <name>TodoApi</name>
     </assembly>
     <members>
+        <member name="M:TodoApi.Controllers.CheckoutController.DeleteCheckoutItem(System.Int64)">
+            <summary>
+            Deletes a specific CheckoutItem.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:TodoApi.Controllers.DemandsController.DeleteDemandsItem(System.Int64)">
+            <summary>
+            Deletes a specific DemandsItem.
+            </summary>
+            <param name="id"></param>
+        </member>
         <member name="M:TodoApi.Controllers.LivroController.DeleteLivroItem(System.Int64)">
             <summary>
             Deletes a specific LivroItem.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:TodoApi.Controllers.SearchController.DeleteSearchItem(System.Int64)">
+            <summary>
+            Deletes a specific SearchItem.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:TodoApi.Controllers.StatusController.DeleteStatusItem(System.Int64)">
+            <summary>
+            Deletes a specific StatusItem.
             </summary>
             <param name="id"></param>
         </member>
