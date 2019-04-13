@@ -4,9 +4,21 @@
         <name>TodoApi</name>
     </assembly>
     <members>
+        <member name="M:TodoApi.Controllers.LivroController.DeleteLivroItem(System.Int64)">
+            <summary>
+            Deletes a specific LivroItem.
+            </summary>
+            <param name="id"></param>
+        </member>
         <member name="M:TodoApi.Controllers.TodoController.DeleteTodoItem(System.Int64)">
             <summary>
             Deletes a specific TodoItem.
+            </summary>
+            <param name="id"></param>   
+        </member>
+        <member name="M:TodoApi.Controllers.UserController.DeleteUserItem(System.Int64)">
+            <summary>
+            Deletes a specific UserItem.
             </summary>
             <param name="id"></param>   
         </member>
